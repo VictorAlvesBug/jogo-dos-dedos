@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main class="jogo">
+
+      <div class="jogador" data-indice="0">
+        <span class="jogador-nome">Jogador 1</span>
+        <div class="jogador-maos">
+          <button class="btn-mao" data-indice="0">
+            <img />
+          </button>
+          <button class="btn-mao" data-indice="1">
+            <img />
+          </button>
+        </div>
+        <button class="btn-dividir">Dividir</button>
+      </div>
+
+      <div class="jogador" data-indice="1">
+        <span class="jogador-nome">Jogador 2</span>
+        <div class="jogador-maos">
+          <button class="btn-mao" data-indice="0">
+            <img />
+          </button>
+          <button class="btn-mao" data-indice="1">
+            <img />
+          </button>
+        </div>
+        <button class="btn-dividir">Dividir</button>
+      </div>
+
+      <span class="mao-flutuante"><img /></span>
+    </main>
+    <script src="mao.js"></script>
+    <script src="jogador.js"></script>
+    <script src="jogo.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

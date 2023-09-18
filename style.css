@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+/*
+jogo
+  jogador[data-indice]
+    jogador-nome
+    jogador-maos
+      jogador-mao[data-indice]
+    btn-dividir
+*/
+
+.jogo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.jogador{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: gray;
+  padding: 10px;
+  gap: 10px;
+}
+
+.jogador-nome{
+  font-size: 24px;
+}
+
+.jogador-maos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px;
+  gap: 20px;
+}
+
+.btn-mao{
+  pointer-events: none;
+  width: 150px;
+  height: 150px;
+  border-style: none;
+  background-color: rgb(235, 235, 235);
+  font-size: 20px;
+}
+
+.btn-dividir{
+  pointer-events: none;
+  width: 50%;
+  height: 30px;
+  margin: 10px auto;
+  border-style: none;
+}
+
+.btn-mao:hover, 
+.btn-dividir:hover{
+  opacity: 0.8;
+}
+
+.btn-mao.ativo, 
+.btn-dividir.ativo{
+  pointer-events: auto;
+}
+
+.btn-mao img{
+  height: 130px;
+}
+
+.mao-flutuante{
+  position: absolute;
+}
+
+.mao-flutuante img{
+  height: 70px;
+}
+
+/*
+canvas {
+  display: block;
+}
+*/
